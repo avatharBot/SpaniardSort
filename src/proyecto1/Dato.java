@@ -33,7 +33,9 @@ public class Dato implements Comparable<Dato>{
             }
             // mismo nombre
             if (nombComp == 0){
-                return this.edad - dato.getEdad();
+                if(this.edad - dato.getEdad() < 0){
+                    return -1;
+                }
             }
         }
         // va primero dato
