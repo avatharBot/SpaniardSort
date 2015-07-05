@@ -30,8 +30,10 @@ public class TestMezcla extends TestCase {
 
     public void test01(){
         m.ordena(datos);
-        Dato b = datos[0];
-        assertEquals("Nope", 15, b.getEdad());
+        Dato a = datos[0];
+        Dato b = datos[3];
+        assertEquals("Nope", 15, a.getEdad());
+        assertEquals("Nope", 45, b.getEdad());
     }
 
 
